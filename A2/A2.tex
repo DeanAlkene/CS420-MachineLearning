@@ -1,0 +1,144 @@
+\documentclass{article}
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2020
+
+% ready for submission
+% \usepackage{neurips_2020}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2020}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2020}
+
+% to avoid loading the natbib package, add option nonatbib:
+\usepackage[preprint]{neurips_2020}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfigure}
+% \usepackage{caption}
+\usepackage[vlined,ruled,commentsnumbered,linesnumbered]{algorithm2e}
+
+\title{Machine Learning Homework 2\thanks{GitHub repo: https://github.com/DeanAlkene/CS420-MachineLearning/tree/master/A2}}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+\author{
+  Hongzhou Liu \\
+  517030910214 \\
+  \texttt{deanlhz@sjtu.edu.cn} \\
+}
+
+\begin{document}
+
+\maketitle
+
+\section{PCA algorithm}
+
+\section{Factor Analysis (FA)}
+By Bayesian formula, we know that
+\begin{equation}
+  p(\mathbf{y}|\mathbf{x})=\dfrac{p(\mathbf{x},\mathbf{y})}{p(\mathbf{x})}=\dfrac{p(\mathbf{x}|\mathbf{y})p(\mathbf{y})}{p(\mathbf{x})}
+\end{equation}
+Here, 
+\begin{equation}
+  p(\mathbf{x})=p(\mathbf{Ay}+\mu+\mathbf{e})
+\end{equation}
+and
+\begin{equation}
+  p(\mathbf{x}|\mathbf{y})=G(\mathbf{x}|\mathbf{Ay}+\mu,\Sigma_e),p(\mathbf{y})=G(\mathbf{y}|0,\Sigma_y)
+\end{equation}
+generally 
+\begin{equation}
+  p(\mathbf{e})=G(\mathbf{e}|\mu_e,\Sigma_e)  
+\end{equation}
+Here, $\mathbf{Ay}+\mu$ is an affine transformation of $\mathbf{y}$, thus 
+\begin{equation}
+  p(\mathbf{x})=G(\mathbf{Ay}+\mu|\mu, \mathbf{A}\Sigma_y\mathbf{A}^T)+G(\mathbf{e}|\mu_e,\Sigma_e)=G(\mathbf{x}|\mu+\mu_e, \mathbf{A}\Sigma_y\mathbf{A}^T+\Sigma_e)  
+\end{equation}
+Then, 
+\begin{equation}
+  p(\mathbf{y}|\mathbf{x})=\dfrac{G(\mathbf{x}|\mathbf{Ay}+\mu,\Sigma_e)G(\mathbf{y}|0,\Sigma_y)}{G(\mathbf{x}|\mu+\mu_e, \mathbf{A}\Sigma_y\mathbf{A}^T+\Sigma_e)}  
+\end{equation}
+The density function of Gaussian distribution is 
+\begin{equation}
+  G(\mathbf{x}|\mathbf{\mu},\mathbf{\Sigma})=\dfrac{1}{\sqrt{(2\pi)^k|\mathbf{\Sigma}|}}\exp(-\dfrac{1}{2}(\mathbf{x}-\mathbf{\mu})^T\mathbf{\Sigma}^{-1}(\mathbf{x}-\mathbf{\mu}))  
+\end{equation}
+$k$ is the dimension of $\mathbf{x}$.
+Then we consider the exponential terms of $p(\mathbf{y}|\mathbf{x})$ which is
+\begin{equation}
+  -\dfrac{1}{2}(\mathbf{x}-\mathbf{Ay}-\mu)^T\Sigma_e^{-1}(\mathbf{x}-\mathbf{Ay}-\mu)-\dfrac{1}{2}\mathbf{y}^T\Sigma_y^{-1}\mathbf{y}+\dfrac{1}{2}(\mathbf{x}-\mu+\mu_e)^T(\mathbf{A}\Sigma_y\mathbf{A}^T+\Sigma_e)^{-1}(\mathbf{x}-\mu+\mu_e)  
+\end{equation}
+We only consider terms containing $\mathbf{y}$, that is
+\begin{equation}
+  \label{eq1}
+  \begin{split}
+    &-\dfrac{1}{2}[-\mathbf{x}^T\Sigma_e^{-1}\mathbf{Ay}-\mathbf{y}^T\mathbf{A}^T\Sigma_e^{-1}(\mathbf{x}-\mathbf{Ay}-\mu)+\mu^T\Sigma_e^{-1}\mathbf{Ay}+\mathbf{y}^T\Sigma_y^{-1}\mathbf{y}]\\
+    &=-\dfrac{1}{2}[(\mu-\mathbf{x})^T\Sigma_e^{-1}\mathbf{Ay}+\mathbf{y}^T\mathbf{A}^T\Sigma_e^{-1}(\mu-\mathbf{x})+\mathbf{y}^T(\mathbf{A}^T\Sigma_e^{-1}\mathbf{A}+\Sigma_y^{-1})\mathbf{y}]
+  \end{split}
+\end{equation}
+We know that
+\begin{equation}
+  \label{eq2}
+  \begin{split}
+    &(\mathbf{y}-\mathbf{\mu})^T\mathbf{\Sigma}^{-1}(\mathbf{y}-\mathbf{\mu})\\
+    &=\mathbf{y}^T\Sigma^{-1}\mathbf{y}-\mathbf{y}^T\Sigma^{-1}\mu-\mu^T\Sigma^{-1}\mathbf{y}+\mu^T\Sigma^{-1}\mu
+  \end{split}
+\end{equation}
+Compare \ref{eq1} and \ref{eq2} we get,
+\begin{equation}
+  \Sigma_{\mathbf{y|x}}=(\mathbf{A}^T\Sigma_e^{-1}\mathbf{A}+\Sigma_y^{-1})^{-1}  
+\end{equation}
+and 
+\begin{equation}
+  \Sigma_{\mathbf{y|x}}^{-1}\mu_{\mathbf{y}|\mathbf{x}}=\mathbf{A}^T\Sigma_e^{-1}(\mathbf{x}-\mu)  
+\end{equation}
+Hence
+\begin{equation}
+  p(\mathbf{y}|\mathbf{x})=G(\mathbf{y}|(\mathbf{A}^T\Sigma_e^{-1}\mathbf{A}+\Sigma_y^{-1})^{-1}\mathbf{A}^T\Sigma_e^{-1}(\mathbf{x}-\mu), (\mathbf{A}^T\Sigma_e^{-1}\mathbf{A}+\Sigma_y^{-1})^{-1})  
+\end{equation}
+\section{Independent Component Analysis (ICA)}
+\par
+In ICA, we have a linear combination of source vectors $\mathbf{x}=\mathbf{As}$ where $\mathbf{s}$ are independent sources. The goal is to find a transformation $\mathbf{W}$ to seperate each sources into $\mathbf{y}$ and make each entry in $\mathbf{y}$ as independent as possible.
+\par
+The Central Limit Theorem tells us that a sum of independent random variables from arbitrary distributions tends torwards a Gaussian distribution, under certain conditions.
+Let's consider ICA as
+\begin{equation}
+  \mathbf{y}=\mathbf{w}^T\mathbf{x}=\mathbf{w}^T\mathbf{As}=(\mathbf{w}^T\mathbf{A})\mathbf{s}=\mathbf{z}^T\mathbf{s}
+\end{equation}
+Now, $\mathbf{y}$ is a liner combination of random variables $\mathbf{s}$. According to the Central Limit Theorem, $\mathbf{y}$ should be closer to Gaussian than any $s_i$ in $\mathbf{s}$. However, to pursue independence among each entry of $\mathbf{y}$,
+we ought to minimize affects of being closer to Gaussian brought by $\mathbf{z}^T$. It is equally to say, we should take $\mathbf{w}$ that maximizes the non-Gaussianity, which is a principle for ICA estimation.
+\par
+In another perspective, let's prove that in ICA at most one Gaussian variable is allowed. Let's consider $\mathbf{x}=\mathbf{As}$ where $\mathbf{s}={s_1,s_2}$. Without lossing of generality, let $\mathbf{s}\sim\mathcal{N}(0, I)$. Then, 
+\begin{equation}
+  \mathbf{x}\sim\mathcal{N}(0, \mathbf{AA}^T)
+\end{equation}
+Here is an orthogonal transformation matrix $\mathbf{R}$. Apply it on $\mathbf{A}$ as $\mathbf{A'}=\mathbf{AR}$, we have
+\begin{equation}
+  \mathbf{x'}=\mathbf{ARs}\sim\mathcal{N}(0, \mathbf{AR}\mathbf{R}^T\mathbf{A}^T)=\mathcal{N}(0, \mathbf{AA}^T)
+\end{equation}
+Thus, due to the symetric property of multivariable Gaussian, we cannot tell the source $\mathbf{s}$ from the observation $\mathbf{x}$ because there're infinite much $\mathbf{s}$. In this way, we also proved that, to implement ICA we should stay away from Gaussian.
+\section{Dimension Reduction by FA}
+
+\section{Spectral clustering}
+
+\section*{References}
+\small
+[1] J. Yang and L. Jin, "An Improved RPCL Algorithm for Determining Clustering Number Automatically," TENCON 2006 - 2006 IEEE Region 10 Conference, Hong Kong, 2006, pp. 1-3.
+\end{document}
