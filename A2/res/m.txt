@@ -1,0 +1,9 @@
+N=500, n=10, m=1, mu=0, sigma^2=0.1, best_k_aic=5, best_k_bic=3, best_aic=-2714.345491, best_bic=-2922.968592
+N=500, n=10, m=2, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=4, best_aic=-3221.695130, best_bic=-3430.318231
+N=500, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=4, best_aic=-4504.367828, best_bic=-4712.990928
+N=500, n=10, m=5, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=5, best_aic=-5266.175263, best_bic=-5474.798364
+N=500, n=10, m=8, mu=0, sigma^2=0.1, best_k_aic=7, best_k_bic=7, best_aic=-6538.478659, best_bic=-6747.101760
+N=500, n=10, m=10, mu=0, sigma^2=0.1, best_k_aic=7, best_k_bic=7, best_aic=-7201.846576, best_bic=-7410.469677
+N=500, n=10, m=15, mu=0, sigma^2=0.1, best_k_aic=8, best_k_bic=7, best_aic=-8157.844961, best_bic=-8366.468062
+N=500, n=10, m=20, mu=0, sigma^2=0.1, best_k_aic=7, best_k_bic=7, best_aic=-8959.720000, best_bic=-9168.343101
+N=500, n=10, m=50, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=6, best_aic=-11266.871473, best_bic=-11475.494574

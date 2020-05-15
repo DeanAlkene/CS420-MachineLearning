@@ -1,0 +1,7 @@
+N=50, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=4, best_aic=-493.601677, best_bic=-588.246816
+N=100, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=5, best_aic=-982.810455, best_bic=-1111.766380
+N=200, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=5, best_k_bic=5, best_aic=-1661.446367, best_bic=-1824.713076
+N=500, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=5, best_k_bic=4, best_aic=-4379.957981, best_bic=-4588.581082
+N=1000, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=4, best_aic=-8168.984016, best_bic=-8411.917903
+N=2000, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=6, best_k_bic=4, best_aic=-15455.789912, best_bic=-15733.034584
+N=5000, n=10, m=3, mu=0, sigma^2=0.1, best_k_aic=5, best_k_bic=4, best_aic=-42272.641493, best_bic=-42595.242556
