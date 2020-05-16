@@ -208,7 +208,22 @@ Here is an orthogonal transformation matrix $\mathbf{R}$. Apply it on $\mathbf{A
 \end{equation}
 Thus, due to the symetric property of multivariable Gaussian, we cannot tell the source $\mathbf{s}$ from the observation $\mathbf{x}$ because there're infinite much $\mathbf{s}$. In this way, we also proved that, to implement ICA we should stay away from Gaussian.
 \section{Dimension Reduction by FA}
-
+\par
+In this section, I generated datasets based on following Factor Analysis model and did experiments on different settings of parameters of FA. Then I ran AIC and BIC model selection on those datasets and compared the performances of them.
+\begin{equation}
+  \mathbf{x}=\mathbf{Ay}+\mu+\mathbf{e}
+\end{equation}
+\begin{equation}
+  p(\mathbf{x}|\mathbf{y})=G(\mathbf{x}|\mathbf{Ay}+\mu,\sigma^2\mathbf{I})
+\end{equation}
+\begin{equation}
+  p(\mathbf{y})=G(\mathbf{y}|0,\mathbf{I})
+\end{equation}
+\par
+\subsection{Experiment on sample size $N$}
+In this experiment, I fixed $n=10$, $m=3$, $\mu=0$, $\sigma^2=0.1$ and tested AIC and BIC model selection on $N=\{50, 100, 200, 500, 1000, 2000, 5000\}$.
+As seen in \ref{N}, the performances of both AIC and BIC fluctuate when the sample size $N$ increases. However, BIC will always choose a solution not worse than AIC. And in most of times, BIC finds a solution closer to the optimal, which is 3.
+The fluctuation may due to the randomized matrix $A$ when generating datasets.
 \begin{table}[htbp]
 	\centering
 	\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -228,7 +243,10 @@ Thus, due to the symetric property of multivariable Gaussian, we cannot tell the
 		\hline
 \end{tabular}
 \end{table}
-
+\subsection{Experiment on observed variable dimension $n$}
+In this experiment, I fixed $N=500$, $m=3$, $\mu=0$, $\sigma^2=0.1$ and tested AIC and BIC with $n$ in range of $\{2, 3, 5, 8, 10, 15, 20, 50, 100\}$.
+As we can see in \ref{n}, when $n$ increases, both $m_{AIC}^*$ and $m_{BIC}^*$ also increase monotonically. In this case, the performances of AIC and BIC are quite the same when $n$ is small or large. But BIC will perform better when $n\in[5, 20]$.
+It also shows that when $n$ becomes larger, the performances of both AIC and BIC are not so good.
 \begin{table}[htbp]
 	\centering
 	\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -250,7 +268,10 @@ Thus, due to the symetric property of multivariable Gaussian, we cannot tell the
 		\hline
 \end{tabular}
 \end{table}
-
+\subsection{Experiment on latent variable dimension $m$}
+In this experiment, I fixed $N=500$, $n=10$, $\mu=0$, $\sigma^2=0.1$ and ran AIC and BIC with $m$ in range of $\{1, 2, 3, 5, 8, 10, 15, 20, 50\}$.
+As usual, we can see \ref{m} that BIC chooses a number smaller or equal than AIC and thus gets closer to the optimal. 
+But when $m>n$ in which we are trying to increase dimension, the number that AIC and BIC choosed will be limited below 10, which is the value of $n$.
 \begin{table}[htbp]
 	\centering
 	\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -272,12 +293,18 @@ Thus, due to the symetric property of multivariable Gaussian, we cannot tell the
 		\hline
 \end{tabular}
 \end{table}
-
+\subsection{Experiment on the mean $\mu$}
+In this experiment, I fixed $N=500$, $n=10$, $m=10$, $\sigma^2=0.1$ and tested AIC and BIC with $\mu$ over $\{-2.0, -1.0, -0.8, -0.5,-0.2, 0, 0.2, 0.5, 0.8, 1.0, 2.0\}$.
+The result also shows that \ref{mu}, though fluctuation occurs, BIC will perform better than AIC in most cases. In some cases, BIC hits the optimal value of 3.
+\\
+\\
+\\
+\\
 \begin{table}[htbp]
 	\centering
 	\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 	\renewcommand\arraystretch{1.0}
-	\caption{Experiment on dimension $\mu$}
+	\caption{Experiment on the mean $\mu$}
 	\label{mu}%
 	\begin{tabular}{c|c|c|c|c|c|c|c|c}
     $N$ & $n$ & $m$ & $\mu$ & $\sigma^2$ & $m^*_{AIC}$ & $m^*_{BIC}$ & $J_{AIC}(m^*_{AIC})$ &$J_{BIC}(m^*_{BIC})$\\
@@ -296,12 +323,15 @@ Thus, due to the symetric property of multivariable Gaussian, we cannot tell the
 		\hline
 \end{tabular}
 \end{table}
-
+\subsection{Experiment on noise level $\sigma^2$}
+In this experiment, I fixed $N=500$, $n=10$, $m=10$, $\mu=0$ and tested AIC and BIC on $\sigma^2=\{0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0\}$.
+It \ref{ss} again proves that BIC performs better than AIC in model selection in most cases. 
+But the result fluctuates strangely, it may reveal that as the noise level increases, the tendency of uncertainty of the results occurs. And in this case, BIC is more stable than AIC.
 \begin{table}[htbp]
 	\centering
 	\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 	\renewcommand\arraystretch{1.0}
-	\caption{Experiment on dimension $\sigma^2$}
+	\caption{Experiment on noise level $\sigma^2$}
 	\label{ss}%
 	\begin{tabular}{c|c|c|c|c|c|c|c|c}
     $N$ & $n$ & $m$ & $\mu$ & $\sigma^2$ & $m^*_{AIC}$ & $m^*_{BIC}$ & $J_{AIC}(m^*_{AIC})$ &$J_{BIC}(m^*_{BIC})$\\
@@ -319,7 +349,13 @@ Thus, due to the symetric property of multivariable Gaussian, we cannot tell the
 \end{table}
 
 \section{Spectral clustering}
+\par
+I compared Spectral Clustering and Gaussian Mixture Model on different datasets provided by \texttt{sklearn}. 
+As we can see \ref{fig:sp} Spectral Clustering works quite well on Blobs, Circle, Moon and Varied datasets, but no so well on Aniso and No Structure datasets.
+It shows that Spectral Clustering is suitable for data in special distributions. And in \texttt{sklearn}, the similarity matrix is based on distances between data points.
+The performance of Spectral Clustering always affeted by the metric of similarity and the construction of similarity graph.
 \begin{figure}[htbp]
+  \label{fig:sp}%
   \centering
   \subfigure[Aniso]{
     \begin{minipage}[htbp]{0.3\linewidth}
@@ -360,8 +396,11 @@ Thus, due to the symetric property of multivariable Gaussian, we cannot tell the
   }
   \caption{Spectral Clustering on Different Datasets}
 \end{figure}
-
+\par
+We can also observe \ref{fig:gmm} that Gaussian Mixture Model works quite well on Aniso, Blobs and Varied datasets. It prefers data that distributes in clusters which is regular and sparse without strange structures.
+It's because GMM is a mixture of Gaussian distributions, which can easily fit those "ellipses".
 \begin{figure}[htbp]
+  \label{fig:gmm}%
   \centering
   \subfigure[Aniso]{
     \begin{minipage}[htbp]{0.3\linewidth}

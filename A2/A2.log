@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.10)  16 MAY 2020 00:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.10)  16 MAY 2020 13:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -989,132 +989,202 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<res/SpectralClustering_Aniso.png, id=81, 462.528pt x 346.896pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 223.
+
+[3]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 246.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 246.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 296.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--326
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 326.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 326.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 326.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 326.
+
+[4]
+<res/SpectralClustering_Aniso.png, id=130, 462.528pt x 346.896pt>
 File: res/SpectralClustering_Aniso.png Graphic file (type png)
 <use res/SpectralClustering_Aniso.png>
-Package pdftex.def Info: res/SpectralClustering_Aniso.png  used on input line 329.
+Package pdftex.def Info: res/SpectralClustering_Aniso.png  used on input line 365.
 (pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
 
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 329--329
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 365--365
  [][] 
  []
 
-<res/SpectralClustering_Blobs.png, id=83, 462.528pt x 346.896pt>
+<res/SpectralClustering_Blobs.png, id=132, 462.528pt x 346.896pt>
 File: res/SpectralClustering_Blobs.png Graphic file (type png)
 <use res/SpectralClustering_Blobs.png>
-Package pdftex.def Info: res/SpectralClustering_Blobs.png  used on input line 335.
-(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
-
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 335--335
- [][] 
- []
-
-<res/SpectralClustering_Circle.png, id=84, 462.528pt x 346.896pt>
-File: res/SpectralClustering_Circle.png Graphic file (type png)
-<use res/SpectralClustering_Circle.png>
-Package pdftex.def Info: res/SpectralClustering_Circle.png  used on input line 341.
-(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
-
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 341--341
- [][] 
- []
-
-<res/SpectralClustering_Moon.png, id=85, 462.528pt x 346.896pt>
-File: res/SpectralClustering_Moon.png Graphic file (type png)
-<use res/SpectralClustering_Moon.png>
-Package pdftex.def Info: res/SpectralClustering_Moon.png  used on input line 348.
-(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
-
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 348--348
- [][] 
- []
-
-<res/SpectralClustering_NoStructure.png, id=86, 462.528pt x 346.896pt>
-File: res/SpectralClustering_NoStructure.png Graphic file (type png)
-<use res/SpectralClustering_NoStructure.png>
-Package pdftex.def Info: res/SpectralClustering_NoStructure.png  used on input line 354.
-(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
-
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 354--354
- [][] 
- []
-
-<res/SpectralClustering_Varied.png, id=87, 462.528pt x 346.896pt>
-File: res/SpectralClustering_Varied.png Graphic file (type png)
-<use res/SpectralClustering_Varied.png>
-Package pdftex.def Info: res/SpectralClustering_Varied.png  used on input line 360.
-(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
-
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 360--360
- [][] 
- []
-
-<res/GMM_Aniso.png, id=88, 462.528pt x 346.896pt>
-File: res/GMM_Aniso.png Graphic file (type png)
-<use res/GMM_Aniso.png>
-Package pdftex.def Info: res/GMM_Aniso.png  used on input line 371.
+Package pdftex.def Info: res/SpectralClustering_Blobs.png  used on input line 371.
 (pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
 
 Overfull \hbox (13.52791pt too wide) in paragraph at lines 371--371
  [][] 
  []
 
-<res/GMM_Blobs.png, id=89, 462.528pt x 346.896pt>
-File: res/GMM_Blobs.png Graphic file (type png)
-<use res/GMM_Blobs.png>
-Package pdftex.def Info: res/GMM_Blobs.png  used on input line 377.
+<res/SpectralClustering_Circle.png, id=133, 462.528pt x 346.896pt>
+File: res/SpectralClustering_Circle.png Graphic file (type png)
+<use res/SpectralClustering_Circle.png>
+Package pdftex.def Info: res/SpectralClustering_Circle.png  used on input line 377.
 (pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
 
 Overfull \hbox (13.52791pt too wide) in paragraph at lines 377--377
  [][] 
  []
 
-<res/GMM_Circle.png, id=90, 462.528pt x 346.896pt>
-File: res/GMM_Circle.png Graphic file (type png)
-<use res/GMM_Circle.png>
-Package pdftex.def Info: res/GMM_Circle.png  used on input line 383.
+<res/SpectralClustering_Moon.png, id=134, 462.528pt x 346.896pt>
+File: res/SpectralClustering_Moon.png Graphic file (type png)
+<use res/SpectralClustering_Moon.png>
+Package pdftex.def Info: res/SpectralClustering_Moon.png  used on input line 384.
 (pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
 
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 383--383
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 384--384
  [][] 
  []
 
-<res/GMM_Moon.png, id=91, 462.528pt x 346.896pt>
-File: res/GMM_Moon.png Graphic file (type png)
-<use res/GMM_Moon.png>
-Package pdftex.def Info: res/GMM_Moon.png  used on input line 390.
+<res/SpectralClustering_NoStructure.png, id=135, 462.528pt x 346.896pt>
+File: res/SpectralClustering_NoStructure.png Graphic file (type png)
+<use res/SpectralClustering_NoStructure.png>
+Package pdftex.def Info: res/SpectralClustering_NoStructure.png  used on input line 390.
 (pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
 
 Overfull \hbox (13.52791pt too wide) in paragraph at lines 390--390
  [][] 
  []
 
-<res/GMM_NoStructure.png, id=92, 462.528pt x 346.896pt>
-File: res/GMM_NoStructure.png Graphic file (type png)
-<use res/GMM_NoStructure.png>
-Package pdftex.def Info: res/GMM_NoStructure.png  used on input line 396.
+<res/SpectralClustering_Varied.png, id=136, 462.528pt x 346.896pt>
+File: res/SpectralClustering_Varied.png Graphic file (type png)
+<use res/SpectralClustering_Varied.png>
+Package pdftex.def Info: res/SpectralClustering_Varied.png  used on input line 396.
 (pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
 
 Overfull \hbox (13.52791pt too wide) in paragraph at lines 396--396
  [][] 
  []
 
-<res/GMM_Varied.png, id=93, 462.528pt x 346.896pt>
-File: res/GMM_Varied.png Graphic file (type png)
-<use res/GMM_Varied.png>
-Package pdftex.def Info: res/GMM_Varied.png  used on input line 402.
+<res/GMM_Aniso.png, id=138, 462.528pt x 346.896pt>
+File: res/GMM_Aniso.png Graphic file (type png)
+<use res/GMM_Aniso.png>
+Package pdftex.def Info: res/GMM_Aniso.png  used on input line 410.
 (pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
 
-Overfull \hbox (13.52791pt too wide) in paragraph at lines 402--402
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 410--410
  [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
-[3] [4] [5 <./res/SpectralClustering_Aniso.png> <./res/SpectralClustering_Blobs.png> <./res/SpectralClustering_Circle.png> <./res/SpectralClustering_Moon.png> <./res/SpectralClustering_NoStructure.png> <./res/SpectralClustering_Varied.png> <./res/GMM_Aniso.png> <./res/GMM_Blobs.png> <./res/GMM_Circle.png> <./res/GMM_Moon.png> <./res/GMM_NoStructure.png> <./res/GMM_Varied.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
+<res/GMM_Blobs.png, id=139, 462.528pt x 346.896pt>
+File: res/GMM_Blobs.png Graphic file (type png)
+<use res/GMM_Blobs.png>
+Package pdftex.def Info: res/GMM_Blobs.png  used on input line 416.
+(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
+
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 416--416
+ [][] 
+ []
+
+<res/GMM_Circle.png, id=140, 462.528pt x 346.896pt>
+File: res/GMM_Circle.png Graphic file (type png)
+<use res/GMM_Circle.png>
+Package pdftex.def Info: res/GMM_Circle.png  used on input line 422.
+(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
+
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 422--422
+ [][] 
+ []
+
+<res/GMM_Moon.png, id=141, 462.528pt x 346.896pt>
+File: res/GMM_Moon.png Graphic file (type png)
+<use res/GMM_Moon.png>
+Package pdftex.def Info: res/GMM_Moon.png  used on input line 429.
+(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
+
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 429--429
+ [][] 
+ []
+
+<res/GMM_NoStructure.png, id=142, 462.528pt x 346.896pt>
+File: res/GMM_NoStructure.png Graphic file (type png)
+<use res/GMM_NoStructure.png>
+Package pdftex.def Info: res/GMM_NoStructure.png  used on input line 435.
+(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
+
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 435--435
+ [][] 
+ []
+
+<res/GMM_Varied.png, id=143, 462.528pt x 346.896pt>
+File: res/GMM_Varied.png Graphic file (type png)
+<use res/GMM_Varied.png>
+Package pdftex.def Info: res/GMM_Varied.png  used on input line 441.
+(pdftex.def)             Requested size: 132.77461pt x 99.58464pt.
+
+Overfull \hbox (13.52791pt too wide) in paragraph at lines 441--441
+ [][] 
+ []
+
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
+ [6 <./res/SpectralClustering_Aniso.png> <./res/SpectralClustering_Blobs.png> <./res/SpectralClustering_Circle.png> <./res/SpectralClustering_Moon.png> <./res/SpectralClustering_NoStructure.png> <./res/SpectralClustering_Varied.png> <./res/GMM_Aniso.png> <./res/GMM_Blobs.png> <./res/GMM_Circle.png> <./res/GMM_Moon.png> <./res/GMM_NoStructure.png> <./res/GMM_Varied.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 445.
  (./A2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 445.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 445.
 
 
 Package rerunfilecheck Warning: File `A2.out' has changed.
@@ -1122,23 +1192,23 @@ Package rerunfilecheck Warning: File `A2.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `A2.out':
-(rerunfilecheck)             Before: 217D760856B467C33544E6F5E09D9216;481
-(rerunfilecheck)             After:  84D2E3D990867B0BC2B0C2AD1A937595;442.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 406.
+(rerunfilecheck)             Before: EE0894E0D098F705AC999C1DB09ACECE;956
+(rerunfilecheck)             After:  3999A73AF89748DAA2F5C51DD9A03650;851.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 445.
  ) 
 Here is how much of TeX's memory you used:
- 11333 strings out of 494292
- 166805 string characters out of 6167078
- 347275 words of memory out of 5000000
- 14452 multiletter control sequences out of 15000+600000
- 37359 words of font info for 98 fonts, out of 8000000 for 9000
+ 11364 strings out of 494292
+ 167149 string characters out of 6167078
+ 340883 words of memory out of 5000000
+ 14459 multiletter control sequences out of 15000+600000
+ 38009 words of font info for 108 fonts, out of 8000000 for 9000
  331 hyphenation exceptions out of 8191
  34i,16n,38p,290b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/dean/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on A2.pdf (5 pages, 818404 bytes).
+Output written on A2.pdf (6 pages, 826368 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 64 named destinations out of 1000 (max. 500000)
- 20597 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 20637 words of extra memory for PDF output out of 20736 (max. 10000000)
 

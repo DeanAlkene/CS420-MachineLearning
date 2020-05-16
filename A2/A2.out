@@ -4,4 +4,9 @@
 \BOOKMARK [1][-]{section.2}{Factor Analysis \(FA\)}{}% 4
 \BOOKMARK [1][-]{section.3}{Independent Component Analysis \(ICA\)}{}% 5
 \BOOKMARK [1][-]{section.4}{Dimension Reduction by FA}{}% 6
-\BOOKMARK [1][-]{section.5}{Spectral clustering}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Experiment on sample size N}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Experiment on observed variable dimension n}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Experiment on latent variable dimension m}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Experiment on the mean }{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{Experiment on noise level 2}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Spectral clustering}{}% 12
