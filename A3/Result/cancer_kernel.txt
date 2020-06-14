@@ -1,0 +1,8 @@
+scale=True, test_size=0.400000, C=1.000000, kernel=linear, cancer_dim=10, score=0.978102, time=0.003081s
+scale=True, test_size=0.400000, C=1.000000, kernel=poly, cancer_dim=10, score=0.934307, time=0.002473s
+scale=True, test_size=0.400000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.948905, time=0.002447s
+scale=True, test_size=0.400000, C=1.000000, kernel=sigmoid, cancer_dim=10, score=0.967153, time=0.002362s
+scale=False, test_size=0.400000, C=1.000000, kernel=linear, cancer_dim=10, score=0.963504, time=0.001867s
+scale=False, test_size=0.400000, C=1.000000, kernel=poly, cancer_dim=10, score=0.967153, time=0.001940s
+scale=False, test_size=0.400000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.956204, time=0.002457s
+scale=False, test_size=0.400000, C=1.000000, kernel=sigmoid, cancer_dim=10, score=0.927007, time=0.003302s

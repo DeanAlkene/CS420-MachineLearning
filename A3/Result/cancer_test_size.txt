@@ -1,0 +1,10 @@
+scale=True, test_size=0.100000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.898551, time=0.003433s
+scale=True, test_size=0.200000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.970803, time=0.003726s
+scale=True, test_size=0.300000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.965854, time=0.002873s
+scale=True, test_size=0.400000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.967153, time=0.002506s
+scale=True, test_size=0.500000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.967836, time=0.003797s
+scale=False, test_size=0.100000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.956522, time=0.003667s
+scale=False, test_size=0.200000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.992701, time=0.003895s
+scale=False, test_size=0.300000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.970732, time=0.003534s
+scale=False, test_size=0.400000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.963504, time=0.003659s
+scale=False, test_size=0.500000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.976608, time=0.002983s

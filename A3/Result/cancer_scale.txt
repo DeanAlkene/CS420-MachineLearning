@@ -1,0 +1,2 @@
+scale=True, test_size=0.400000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.952555, time=0.002974s
+scale=False, test_size=0.400000, C=1.000000, kernel=rbf, cancer_dim=10, score=0.978102, time=0.003406s

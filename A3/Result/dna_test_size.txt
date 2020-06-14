@@ -1,0 +1,10 @@
+scale=True, test_size=0.100000, C=1.000000, kernel=rbf, dna_dim=180, score=0.968652, time=1.356899s
+scale=True, test_size=0.200000, C=1.000000, kernel=rbf, dna_dim=180, score=0.967085, time=1.229599s
+scale=True, test_size=0.300000, C=1.000000, kernel=rbf, dna_dim=180, score=0.952929, time=1.109939s
+scale=True, test_size=0.400000, C=1.000000, kernel=rbf, dna_dim=180, score=0.961569, time=1.027647s
+scale=True, test_size=0.500000, C=1.000000, kernel=rbf, dna_dim=180, score=0.951036, time=1.015805s
+scale=False, test_size=0.100000, C=1.000000, kernel=rbf, dna_dim=180, score=0.934169, time=1.274454s
+scale=False, test_size=0.200000, C=1.000000, kernel=rbf, dna_dim=180, score=0.976489, time=1.192681s
+scale=False, test_size=0.300000, C=1.000000, kernel=rbf, dna_dim=180, score=0.958159, time=1.081099s
+scale=False, test_size=0.400000, C=1.000000, kernel=rbf, dna_dim=180, score=0.952941, time=1.059043s
+scale=False, test_size=0.500000, C=1.000000, kernel=rbf, dna_dim=180, score=0.962963, time=1.043189s

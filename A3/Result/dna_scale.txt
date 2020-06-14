@@ -1,0 +1,2 @@
+scale=True, test_size=0.400000, C=1.000000, kernel=rbf, dna_dim=180, score=0.953725, time=0.999027s
+scale=False, test_size=0.400000, C=1.000000, kernel=rbf, dna_dim=180, score=0.958431, time=0.996471s
