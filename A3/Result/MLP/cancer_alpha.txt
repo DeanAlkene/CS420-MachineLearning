@@ -1,0 +1,4 @@
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.001000, lr=adaptive, cancer_dim=10, score=0.956204, time=0.598986s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.978102, time=0.709212s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.001000, lr=adaptive, cancer_dim=10, score=0.963504, time=0.473693s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.959854, time=0.758354s

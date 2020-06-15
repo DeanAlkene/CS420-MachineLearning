@@ -1,0 +1,10 @@
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=2, score=0.967153, time=0.442159s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=3, score=0.974453, time=0.413758s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=5, score=0.956204, time=0.673733s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=8, score=0.956204, time=0.975003s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.967153, time=0.843079s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=2, score=0.963504, time=0.388336s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=3, score=0.981752, time=0.360079s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=5, score=0.967153, time=0.453767s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=8, score=0.981752, time=0.804982s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.974453, time=0.535618s

@@ -1,0 +1,4 @@
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=180, score=0.943529, time=0.914089s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=180, score=0.934902, time=1.871526s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=180, score=0.938039, time=0.953900s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=180, score=0.941961, time=1.192313s

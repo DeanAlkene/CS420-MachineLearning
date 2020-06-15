@@ -1,0 +1,8 @@
+scale=True, test_size=0.400000, layers=(100,), activation=identity, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.970803, time=0.121950s
+scale=True, test_size=0.400000, layers=(100,), activation=logistic, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.970803, time=0.611226s
+scale=True, test_size=0.400000, layers=(100,), activation=tanh, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.970803, time=0.389064s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.970803, time=0.434191s
+scale=False, test_size=0.400000, layers=(100,), activation=identity, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.974453, time=0.272057s
+scale=False, test_size=0.400000, layers=(100,), activation=logistic, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.963504, time=0.610905s
+scale=False, test_size=0.400000, layers=(100,), activation=tanh, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.941606, time=0.352170s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, cancer_dim=10, score=0.970803, time=0.422333s

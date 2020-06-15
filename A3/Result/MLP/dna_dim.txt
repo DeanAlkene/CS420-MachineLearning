@@ -1,0 +1,16 @@
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=2, score=0.743529, time=2.025604s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=5, score=0.909804, time=7.295136s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=10, score=0.877647, time=10.052965s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=20, score=0.899608, time=4.948395s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=50, score=0.899608, time=1.911925s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=100, score=0.913725, time=1.806297s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=150, score=0.933333, time=1.635419s
+scale=True, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=180, score=0.949020, time=1.488684s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=2, score=0.770980, time=1.908340s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=5, score=0.890196, time=8.577925s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=10, score=0.902745, time=11.043759s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=20, score=0.891765, time=5.036426s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=50, score=0.917647, time=2.242789s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=100, score=0.923137, time=1.892612s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=150, score=0.963137, time=2.185504s
+scale=False, test_size=0.400000, layers=(100,), activation=relu, alpha=0.000100, lr=adaptive, dna_dim=180, score=0.945098, time=2.265347s
