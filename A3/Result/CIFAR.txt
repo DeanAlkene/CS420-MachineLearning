@@ -1,0 +1,5 @@
+SVM C=5.0, RBF kernel, score=0.572100, time=17106.871815
+SVM C=5.0, RBF kernel, Z-score, score=0.572900, time=19272.476876
+SVM C=5.0, RBF kernel, PCA-50, score=0.539300, time=452.986338
+SVM C=5.0, RBF kernel, PCA-500, score=0.547800, time=9371.592522
+SVM C=5.0, RBF kernel, PCA-1500, score=0.444600, time=30315.986483
